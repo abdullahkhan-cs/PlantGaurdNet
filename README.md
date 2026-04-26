@@ -6,7 +6,7 @@ Ek high-performance Computer Vision system jo plant diseases ko real-time mein d
 
 ## 🚀 Key Features
 
-- **Architecture:** MobileNetV3-Small (Lightweight & Fast)
+- **Architecture:** MobileNetV3-Small + **CBAM Attention Module** (Lightweight & Fast)
 - **Accuracy:** 94.3% achieved on validation datasets
 - **Edge Ready:** Fully compatible with Raspberry Pi using TFLite
 - **Robustness:** Trained with advanced data augmentation to handle real-world lighting and backgrounds
@@ -75,7 +75,17 @@ PlantGaurdNet/
 
 ## 🧠 Technical Highlights
 
-Is project mein humne **Transfer Learning** ka istemal kiya hai. MobileNetV3 ke pre-trained weights ko use karte hue, humne model ko fine-tune kiya hai taake wo internet ki "random" images aur field ki pictures mein farq kar sake.
+Is project mein humne **Transfer Learning** aur **CBAM (Convolutional Block Attention Module)** ka istemal kiya hai. MobileNetV3 ke pre-trained weights ko use karte hue, humne model ko fine-tune kiya hai taake wo internet ki "random" images aur field ki pictures mein farq kar sake.
+
+### 🔍 CBAM (Convolutional Block Attention Module)
+
+CBAM ek lightweight attention mechanism hai jo model ki feature representation capability enhance karta hai:
+
+| Component | Function |
+|-----------|----------|
+| **Channel Attention** | Important features par focus karta hai |
+| **Spatial Attention** | Spatial locations ko smartly process karta hai |
+| **Combined Attention** | Dono attention ko sequentially apply karta hai |
 
 ### Augmentation Techniques used:
 
