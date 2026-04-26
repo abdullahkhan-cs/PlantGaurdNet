@@ -68,8 +68,15 @@ PlantGaurdNet/
 ├── static/
 │   ├── css/style.css     # Styling
 │   └── script/js/script.js
+├── screeshots/            # Application screenshots
 └── README.md
 ```
+
+## 📸 Screenshots
+
+| Upload Interface | Result Display |
+|-----------------|----------------|
+| ![Upload](screeshots/Screenshot%202026-04-26%20134513.png) | ![Result](screeshots/Screenshot%202026-04-26%20134620.png) |
 
 ---
 
