@@ -7,7 +7,7 @@ A high-performance Computer Vision system that detects plant diseases in real-ti
 ## 🚀 Key Features
 
 - **Architecture:** MobileNetV3-Small + **CBAM Attention Module** (Lightweight & Fast)
-- **Accuracy:** 94.3% achieved on validation datasets
+- **Accuracy:** 97.4% achieved on validation datasets
 - **Edge Ready:** Fully compatible with Raspberry Pi using TFLite
 - **Robustness:** Trained with advanced data augmentation to handle real-world lighting and backgrounds
 - **Mobile Support:** Live camera capture for mobile devices
@@ -18,9 +18,13 @@ A high-performance Computer Vision system that detects plant diseases in real-ti
 
 | Metric | Value |
 |--------|-------|
-| Training Accuracy | 96%+ |
-| Validation Accuracy | 94.3% |
-| Inference Speed | ~150ms on Raspberry Pi 4 |
+| Training Accuracy | 97.4% |
+| Validation Accuracy | 90.7% |
+| Inference Speed | ~12ms on Raspberry Pi 4 |
+
+### Training Progress
+
+![Final Accuracy Report](screeshots/final_accuracy_report.png)
 
 ---
 
