@@ -1,34 +1,127 @@
-# PlantGuardNet
+# 🌿 PlantGuardNet: AI-Powered Disease Detection
 
-AI-powered plant disease detection system using TensorFlow Lite.
+Ek high-performance Computer Vision system jo plant diseases ko real-time mein detect karta hai. Ye project specifically optimize kiya gaya hai Edge Devices (Raspberry Pi) ke liye taake kisaan (farmers) isse field mein asani se use kar saken.
 
-## Features
+---
 
-- 🌿 Plant disease detection from leaf images
-- 📱 Mobile-friendly with live camera support
-- 🎯 Confidence score display
-- ⚡ Fast inference using TensorFlow Lite
+## 🚀 Key Features
 
-## Setup
+- **Architecture:** MobileNetV3-Small (Lightweight & Fast)
+- **Accuracy:** 94.3% achieved on validation datasets
+- **Edge Ready:** Fully compatible with Raspberry Pi using TFLite
+- **Robustness:** Trained with advanced data augmentation to handle real-world lighting and backgrounds
+- **Mobile Support:** Live camera capture for mobile devices
+
+---
+
+## 📊 Performance
+
+| Metric | Value |
+|--------|-------|
+| Training Accuracy | 96%+ |
+| Validation Accuracy | 94.3% |
+| Inference Speed | ~150ms on Raspberry Pi 4 |
+
+---
+
+## 🛠️ Installation
+
+### 1. Repository Clone Karein
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+git clone https://github.com/abdullahkhan-cs/PlantGaurdNet.git
+cd PlantGaurdNet
+```
 
-# Run the app
+### 2. Dependencies Install Karein
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. App Run Karein
+
+```bash
 python app.py
 ```
 
-## Usage
+### 4. Browser Mein Open Karein
 
-1. Open `http://localhost:5000` in your browser
-2. Upload a leaf image or use camera
-3. Click "RUN DIAGNOSTIC"
-4. View disease detection results
+```
+http://localhost:5000
+```
 
-## Tech Stack
+---
 
-- Python (Flask)
-- TensorFlow Lite
-- HTML/CSS/JavaScript
-- Mobile Camera API
+## 🏗️ Project Structure
+
+```
+PlantGaurdNet/
+├── app.py                  # Flask web application
+├── requirements.txt        # Python dependencies
+├── labels.txt             # Disease class labels
+├── models/
+│   └── PlantGuard_Mobile.tflite  # TensorFlow Lite model
+├── templates/
+│   ├── index.html         # Upload/Camera interface
+│   └── result.html        # Results display
+├── static/
+│   ├── css/style.css     # Styling
+│   └── script/js/script.js
+└── README.md
+```
+
+---
+
+## 🧠 Technical Highlights
+
+Is project mein humne **Transfer Learning** ka istemal kiya hai. MobileNetV3 ke pre-trained weights ko use karte hue, humne model ko fine-tune kiya hai taake wo internet ki "random" images aur field ki pictures mein farq kar sake.
+
+### Augmentation Techniques used:
+
+- Random Rotation & Flips
+- Color Jittering (Brightness/Contrast adjustment)
+- Gaussian Noise for robust feature extraction
+
+---
+
+## 📱 Mobile Features
+
+- **Live Camera:** Open camera button se direct capture
+- **Photo Upload:** Gallery se image select karein
+- **Low Confidence Warning:** 70% se kam confidence par warning display
+- **Responsive Design:** Mobile par fully functional
+
+---
+
+## 🤝 Contributing
+
+Open source community ka swagat hai! Agar aap isse behtar banana chahte hain:
+
+1. Fork karein
+2. Naya Feature branch banayein
+3. Pull Request bhej dein
+
+---
+
+## 📜 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+---
+
+## 🙏 Acknowledgments
+
+- University: **QUEST** (optional)
+- Mentor: Your mentor name here
+
+---
+
+## 🔗 Links
+
+- **GitHub Repository:** https://github.com/abdullahkhan-cs/PlantGaurdNet
+- **Live Demo:** Run locally using `python app.py`
+
+---
+
+*Made with ❤️ for farmers and plant health*
