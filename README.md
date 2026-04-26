@@ -1,6 +1,6 @@
 # 🌿 PlantGuardNet: AI-Powered Disease Detection
 
-Ek high-performance Computer Vision system jo plant diseases ko real-time mein detect karta hai. Ye project specifically optimize kiya gaya hai Edge Devices (Raspberry Pi) ke liye taake kisaan (farmers) isse field mein asani se use kar saken.
+A high-performance Computer Vision system that detects plant diseases in real-time. This project is specifically optimized for Edge Devices (Raspberry Pi) so that farmers can easily use it in the field.
 
 ---
 
@@ -26,26 +26,26 @@ Ek high-performance Computer Vision system jo plant diseases ko real-time mein d
 
 ## 🛠️ Installation
 
-### 1. Repository Clone Karein
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/abdullahkhan-cs/PlantGaurdNet.git
 cd PlantGaurdNet
 ```
 
-### 2. Dependencies Install Karein
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. App Run Karein
+### 3. Run the App
 
 ```bash
 python app.py
 ```
 
-### 4. Browser Mein Open Karein
+### 4. Open in Browser
 
 ```
 http://localhost:5000
@@ -75,17 +75,17 @@ PlantGaurdNet/
 
 ## 🧠 Technical Highlights
 
-Is project mein humne **Transfer Learning** aur **CBAM (Convolutional Block Attention Module)** ka istemal kiya hai. MobileNetV3 ke pre-trained weights ko use karte hue, humne model ko fine-tune kiya hai taake wo internet ki "random" images aur field ki pictures mein farq kar sake.
+We used **Transfer Learning** and **CBAM (Convolutional Block Attention Module)** in this project. Using pre-trained weights of MobileNetV3, we fine-tuned the model so that it can differentiate between internet "random" images and field pictures.
 
 ### 🔍 CBAM (Convolutional Block Attention Module)
 
-CBAM ek lightweight attention mechanism hai jo model ki feature representation capability enhance karta hai:
+CBAM is a lightweight attention mechanism that enhances the model's feature representation capability:
 
 | Component | Function |
 |-----------|----------|
-| **Channel Attention** | Important features par focus karta hai |
-| **Spatial Attention** | Spatial locations ko smartly process karta hai |
-| **Combined Attention** | Dono attention ko sequentially apply karta hai |
+| **Channel Attention** | Focuses on important features |
+| **Spatial Attention** | Smartly processes spatial locations |
+| **Combined Attention** | Applies both attention sequentially |
 
 ### Augmentation Techniques used:
 
@@ -97,20 +97,20 @@ CBAM ek lightweight attention mechanism hai jo model ki feature representation c
 
 ## 📱 Mobile Features
 
-- **Live Camera:** Open camera button se direct capture
-- **Photo Upload:** Gallery se image select karein
-- **Low Confidence Warning:** 70% se kam confidence par warning display
-- **Responsive Design:** Mobile par fully functional
+- **Live Camera:** Direct capture using Open Camera button
+- **Photo Upload:** Select image from gallery
+- **Low Confidence Warning:** Warning display when confidence is below 70%
+- **Responsive Design:** Fully functional on mobile
 
 ---
 
 ## 🤝 Contributing
 
-Open source community ka swagat hai! Agar aap isse behtar banana chahte hain:
+Open source community is welcome! If you want to make it better:
 
-1. Fork karein
-2. Naya Feature branch banayein
-3. Pull Request bhej dein
+1. Fork the repository
+2. Create a new Feature branch
+3. Send a Pull Request
 
 ---
 
