@@ -4,12 +4,6 @@ A high-performance Computer Vision system that detects plant diseases in real-ti
 
 ---
 
-# 🌿 PlantGuardNet: AI-Powered Disease Detection
-
-A high-performance Computer Vision system that detects plant diseases in real-time. This project is specifically optimized for Edge Devices (Raspberry Pi) so that farmers can easily use it in the field.
-
----
-
 ## 🚀 Key Features
 
 - **Architecture:** MobileNetV3-Small + **CBAM Attention Module** (Lightweight & Fast)
